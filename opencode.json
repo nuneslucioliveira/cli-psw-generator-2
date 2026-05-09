@@ -1,0 +1,54 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "Ollama_3090": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama 3090",
+      "options": {
+        "baseURL": "http://127.0.0.1:11434/v1"
+      },
+      "models": {
+        "qwen3.6:27b": { "name": "qwen3.6:27b" },
+        "qwen3-coder-largectx": { "name": "qwen3-coder-largectx" }
+      }
+    },
+    "Ollama_3060": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama 3060",
+      "options": {
+        "baseURL": "http://127.0.0.1:11435/v1"
+      },
+      "models": {
+        "qwen3.5:9b-64k": { "name": "qwen3.5:9b-64k" }
+      }
+    }
+  },
+  "model": "Ollama_3090/qwen3-coder-largectx",
+  "small_model": "Ollama_3060/qwen3.5:9b-64k",
+  "agent": {
+    "companion": {
+      "mode": "primary",
+      "model": "Ollama_3060/qwen3.5:9b-64k",
+      "permission": {
+        "task": { "*": "allow" }
+      }
+    },
+    "architect": {
+      "mode": "subagent",
+      "model": "Ollama_3090/qwen3.6:27b"
+    },
+    "coder": {
+      "mode": "subagent",
+      "model": "Ollama_3090/qwen3-coder-largectx"
+    },
+    "promptmind": {
+      "mode": "subagent",
+      "model": "Ollama_3090/qwen3.6:27b"
+    },
+    "operator": {
+      "mode": "subagent",
+      "model": "Ollama_3090/qwen3.6:27b"
+    }
+  },
+  "default_agent": "companion"
+}
