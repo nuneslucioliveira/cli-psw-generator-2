@@ -1,6 +1,6 @@
 # CLI Password Generator Workspace
 
-This repository is the central workspace for CLI Password Generator — A command-line tool that generates secure, customizable passwords based on user-defined length and character set constraints.. It contains architecture decisions (ADRs), product requirements (REQs), inter-service contracts, contribution guides, and the AI agent skills necessary to orchestrate the SDD lifecycle.
+This repository is the central workspace for CLI Password Generator — A command-line tool that generates secure, customizable passwords based on user-defined length and character set constraints. It contains architecture decisions (ADRs), product requirements (REQs), inter-service contracts, contribution guides, and the AI agent skills necessary to orchestrate the SDD lifecycle.
 
 > AI agents working in this repo should read [`AGENTS.md`](AGENTS.md) for navigation and authoring instructions.
 
@@ -53,4 +53,4 @@ See [`docs/shared/workflows/README.md`](docs/shared/workflows/README.md) for ste
 - [Methodology and vocabulary reference](methodology.md)
 - [Branching strategy, PR format, and repository list](docs/shared/architecture/scm.md)
 - [Contribution guides](docs/shared/workflows/README.md)
-- [Project repository](https://github.com/to-be-defined)
+- [Project repository](https://github.com/nuneslucioliveira/cli-psw-generator-2)

@@ -1,7 +1,7 @@
 ---
 project: CLI Password Generator
 description: >
-  A command-line tool that generates secure, customizable passwords
+  CLI Password Generator — A command-line tool that generates secure, customizable passwords
   based on user-defined length and character set constraints.
 methodology: Spec Driven Development (SDD)
 agency_model: Companion-First Agency
