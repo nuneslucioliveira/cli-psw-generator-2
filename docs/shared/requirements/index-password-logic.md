@@ -8,7 +8,13 @@ Product requirements scoped to the password-logic business domain.
 
 ## Active
 
-*No active requirements.*
+| REQ ID | Title | Status | Domain |
+| ------ | --------------| ------ | ------- |
+| REQ-001 | Password Generation Logic | draft | password-logic |
+
+## Cancelled / Superseded
+
+*None yet.*
 
 ## Cancelled / Superseded
 
