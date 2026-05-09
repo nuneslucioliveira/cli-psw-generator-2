@@ -8,7 +8,7 @@ Product requirements scoped to the password-logic business domain.
 
 ## Active
 
-*No active requirements.*
+| [REQ-001](../REQ-001-password-generation.md) | Password Generation Logic | accepted | must | mvp |
 
 ## Cancelled / Superseded
 

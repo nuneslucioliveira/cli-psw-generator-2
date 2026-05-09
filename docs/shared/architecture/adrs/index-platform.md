@@ -8,7 +8,9 @@ Architecture decisions scoped to the platform module.
 
 ## Active
 
-*No ADRs yet.*
+| ADR ID | Title | Status |
+| ------ | --- | ------ |
+| ADR-001 | Core-Generator API Contract | accepted |
 
 ## Superseded / Deprecated
 

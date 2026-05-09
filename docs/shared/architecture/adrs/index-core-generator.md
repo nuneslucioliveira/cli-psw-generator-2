@@ -10,7 +10,7 @@ Architecture decisions scoped to the core-generator module.
 
 | ADR ID | Title | Status |
 | ------ | --- | ------ |
-| ADR-001 | Core-Generator API Contract | proposed |
+| ADR-001 | Core-Generator API Contract | accepted |
 
 ## Superseded / Deprecated
 
