@@ -1,12 +1,13 @@
 ---
 id: REQ-002
 title: CLI Interface Configuration
-status: accepted
+status: implemented
 domain: cli-arguments
 milestone: mvp
 priority: must
 author:
   - "Agent: Architect"
+  - "Agent: Coder"
 related-adrs:
   - ADR-001
   - ADR-002

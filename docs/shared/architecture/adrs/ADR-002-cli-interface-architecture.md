@@ -1,7 +1,7 @@
 ---
 id: ADR-002
 title: CLI Interface Architecture
-status: accepted
+status: implemented
 service: cli-interface
 milestone: mvp
 date: 2026-05-10

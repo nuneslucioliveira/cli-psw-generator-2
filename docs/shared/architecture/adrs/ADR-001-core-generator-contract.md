@@ -1,7 +1,7 @@
 ---
 id: ADR-001
 title: ADR-001: Core-Generator API Contract
-status: accepted
+status: implemented
 service: core-generator
 milestone: mvp
 date: 2026-05-09
