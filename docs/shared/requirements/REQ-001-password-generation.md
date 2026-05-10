@@ -1,5 +1,6 @@
 ---
 id: REQ-001
+title: "Password Generation"
 status: accepted
 domain: password-logic
 milestone: mvp
@@ -7,6 +8,7 @@ priority: must
 author:
   - "Agent: Architect"
 ---
+
 # REQ-001 — Password Generation Logic
 # REQ-001 — Password Generation Logic
 

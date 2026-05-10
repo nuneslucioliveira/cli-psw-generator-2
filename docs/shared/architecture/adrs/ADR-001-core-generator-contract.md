@@ -1,6 +1,5 @@
 ---
 id: ADR-001
-status: accepted
 title: ADR-001: Core-Generator API Contract
 status: accepted
 service: core-generator

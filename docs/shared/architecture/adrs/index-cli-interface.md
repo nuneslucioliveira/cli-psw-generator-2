@@ -10,7 +10,7 @@ Architecture decisions scoped to the cli-interface module.
 
 | ADR ID | Title | Status |
 | ------ | --- | ------ |
-| ADR-002 | CLI Interface Architecture | draft |
+| ADR-002 | CLI Interface Architecture | accepted |
 
 ## Superseded / Deprecated
 
