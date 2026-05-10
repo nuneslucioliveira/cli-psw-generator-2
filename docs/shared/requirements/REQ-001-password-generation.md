@@ -1,15 +1,15 @@
 ---
 id: REQ-001
-title: "Password Generation"
-status: accepted
+title: Password Generation
+status: implemented
 domain: password-logic
 milestone: mvp
 priority: must
 author:
   - "Agent: Architect"
+  - "Agent: Coder"
 ---
 
-# REQ-001 — Password Generation Logic
 # REQ-001 — Password Generation Logic
 
 ## 1. Problem Statement
