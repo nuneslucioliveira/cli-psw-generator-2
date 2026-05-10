@@ -8,7 +8,9 @@ Architecture decisions scoped to the cli-interface module.
 
 ## Active
 
-*No ADRs yet.*
+| ADR ID | Title | Status |
+| ------ | --- | ------ |
+| ADR-002 | CLI Interface Architecture | draft |
 
 ## Superseded / Deprecated
 

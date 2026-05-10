@@ -9,6 +9,7 @@ author:
   - "Agent: Architect"
 related-adrs:
   - ADR-001
+  - ADR-002
 requires:
   - REQ-001
 ---
