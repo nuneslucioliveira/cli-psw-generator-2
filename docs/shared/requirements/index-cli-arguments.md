@@ -8,7 +8,7 @@ Product requirements scoped to the cli-arguments business domain.
 
 ## Active
 
-*No active requirements.*
+| [REQ-002](REQ-002-cli-interface-configuration.md) | CLI Interface Configuration | accepted | must | mvp |
 
 ## Cancelled / Superseded
 
