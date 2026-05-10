@@ -54,3 +54,19 @@ See [`docs/shared/workflows/README.md`](docs/shared/workflows/README.md) for ste
 - [Branching strategy, PR format, and repository list](docs/shared/architecture/scm.md)
 - [Contribution guides](docs/shared/workflows/README.md)
 - [Project repository](https://github.com/to-be-defined)
+## Usage
+
+See [USAGE_GUIDE.md](USAGE_GUIDE.md) for detailed instructions.
+
+### Quick Start
+
+```bash
+# Generate default password (16 chars, mixed charset)
+python3 cli_interface/cli_main.py
+
+# Generate custom-length password
+python3 cli_interface/cli_main.py --length 32
+
+# Generate lowercase-only password
+python3 cli_interface/cli_main.py --charset lower
+```

@@ -4,12 +4,10 @@ Tests all acceptance criteria for REQ-002.
 """
 import sys
 import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pytest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 from io import StringIO
-
-# Add the current directory to Python path so we can import cli_interface
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from cli_interface.cli_main import main
 from core_generator import generate_password, GeneratorError, CharsetNotFoundError, InvalidLengthError
