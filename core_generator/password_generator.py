@@ -8,14 +8,14 @@ from .exceptions import GeneratorError, CharsetNotFoundError, InvalidLengthError
 
 
 def generate_password(
-    charset: Literal["lower", "upper", "numeric", "mixed"],
+    charset: Literal["lower", "upper", "numeric", "mixed", "special", "full"],
     length: int
 ) -> str:
     """
     Generate a cryptographically secure password with specified character set and length.
     
     Args:
-        charset: The character set to use ("lower", "upper", "numeric", or "mixed")
+        charset: The character set to use ("lower", "upper", "numeric", "mixed", "special", or "full")
         length: The length of the password (1-128 characters)
         
     Returns:
@@ -34,12 +34,14 @@ def generate_password(
         "lower": "abcdefghijklmnopqrstuvwxyz",
         "upper": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         "numeric": "0123456789",
-        "mixed": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        "mixed": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+        "special": "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~",
+        "full": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
     }
     
     # Validate charset
     if charset not in char_sets:
-        raise CharsetNotFoundError(f"Invalid charset '{charset}'. Must be one of: lower, upper, numeric, mixed")
+        raise CharsetNotFoundError(f"Invalid charset '{charset}'. Must be one of: lower, upper, numeric, mixed, special, full")
     
     # Get the character set for the specified charset
     char_set = char_sets[charset]

@@ -1,7 +1,7 @@
 ---
 id: REQ-003
 title: Special Characters Set
-status: accepted
+status: implemented
 domain: password-logic
 milestone: v2
 priority: must
@@ -13,6 +13,8 @@ requires:
   - REQ-002
 author:
   - "Agent: Architect"
+implementer:
+  - "Agent: Coder"
 ---
 
 # REQ-003 — Special Characters Set
