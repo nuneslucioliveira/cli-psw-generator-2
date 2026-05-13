@@ -12,19 +12,25 @@
 - [x] Team alignment on V2 scope
 
 ### ✅ REQ-003: Special Characters Set (Complete)
-- [x] ADR-003 analysis complete (special + full charsets)
-- [x] Author REQ-003 (Functional + Non-Functional requirements)
-- [x] Author ADR-003 (Extended Character Set Contract)
-- [x] Submit ADR-003 for review
-- [x] Accept ADR-003 (`status: accepted`)
-- [x] Implement REQ-003 in core-generator
-- [x] Derive tests from REQ-003 ACs
-- [x] Pass REQ-003 tests
-- [x] Merge REQ-003 to `develop`
-- [x] Update REQ-003 to `implemented` status
-- [x] Commit to GitHub
-
 **Phase Status:** ✅ All REQ-003 acceptance criteria satisfied. Service boundary verified (core-generator contains no CLI dependencies). All 36 tests passing (24 MVP + 12 REQ-003).
+
+### ✅ REQ-004: Batch Generation Mode (In Progress)
+- [x] Author REQ-004 (Functional + Non-Functional requirements)
+- [x] Derive 12 acceptance criteria (AC-001 through AC-012)
+- [x] Zero TBD markers — D2 gate compliance
+- [ ] Author ADR-004 (Batch Contract decision)
+- [ ] Submit ADR-004 for review
+- [ ] Accept ADR-004 (`status: accepted`)
+- [ ] Implement batch logic in core-generator
+- [ ] Implement cli-interface `--batch` flag
+- [ ] Derive tests from REQ-004 ACs
+- [ ] Pass REQ-004 tests
+- [ ] Submit PR for REQ-004
+- [ ] Merge REQ-004 to `develop`
+- [ ] Update REQ-004 to `implemented` status
+- [ ] Commit to GitHub
+
+**Phase Status:** REQ-004 spec complete with 11 functional requirements. Awaiting ADR-004 contract decision before implementation.
 
 
 ### 🔹 ADR-003: Extended Character Set Contract
@@ -33,11 +39,16 @@
 - [x] ADR acceptance gate
 - [x] Commit to GitHub
 
-### ✅ Phase 0.5 — Quality Gate V2.0 (Pre-REQ-004)
-- [x] REQ-003 complete (`accepted`)
-- [x] ADR-003 complete (`accepted`)
-- [x] MVP tests still passing (24/24)
-- [x] Prepare to author REQ-004
+### ✅ Phase 0.5 — Quality Gate V2.0 (Pre-REQ-004) ✅
+
+**Status:** V2.0 Foundation Complete — REQ-003 implemented, ADR-003 accepted
+
+### ✅ REQ-004: Batch Generation Mode (Spec Complete)
+- [x] Author REQ-004 (11 functional + 12 ACs)
+- [x] Zero TBD/TO-DO markers
+- [x] Related ADRs documented (ADR-001, ADR-003, pending ADR-004)
+- [ ] ADR-004 contract decision (architectural pattern)
+- [ ] Quality gate V2.0-Complete
 
 ### 🔹 REQ-004: Batch Generation Mode
 - [ ] Author REQ-004 (Batch API contract, `--batch` flag)
