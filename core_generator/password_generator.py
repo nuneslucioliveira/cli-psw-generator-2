@@ -70,3 +70,34 @@ def generate_password(
     else:
         # For all other charsets, generate normally
         return ''.join(choice(char_set) for _ in range(length))
+
+
+def generate_batch(
+    charset: Literal["lower", "upper", "numeric", "mixed", "special", "full"],
+    length: int,
+    count: int
+) -> list[str]:
+    """
+    Generate a batch of cryptographically secure passwords with specified character set and length.
+    
+    Args:
+        charset: The character set to use ("lower", "upper", "numeric", "mixed", "special", or "full")
+        length: The length of each password (1-128 characters)
+        count: The number of passwords to generate (1-128)
+        
+    Returns:
+        A list of randomly generated password strings
+        
+    Raises:
+        CharsetNotFoundError: If charset is not one of the supported values
+        InvalidLengthError: If length or count is not between 1 and 128 (inclusive)
+    """
+    # Validate inputs
+    if length < 1 or length > 128:
+        raise InvalidLengthError(f"Password length must be between 1 and 128. Got {length}")
+    
+    if count < 1 or count > 128:
+        raise InvalidLengthError(f"Batch count must be between 1 and 128. Got {count}")
+    
+    # Generate the batch of passwords
+    return [generate_password(charset, length) for _ in range(count)]
