@@ -49,7 +49,7 @@
 - [x] Zero TBD/TO-DO markers
 - [x] Related ADRs documented (ADR-001, ADR-003, pending ADR-004)
 
-### ✅ ADR-004: Batch Generation Contract (Accepted)
+### ✅ ADR-004: Batch Generation Contract (Accepted) ✅
 - [x] ADR-004 content authored (dedicated generate_batch function)
 - [x] Two options evaluated (A: dedicated function / B: iterative delegation)
 - [x] Decision outcome: Option A chosen (preserves service boundary)
@@ -61,8 +61,13 @@
 - [x] Accept ADR-004 (`status: accepted`)
 - [x] Commit to GitHub
 - [x] Update index files (core-generator ADR index, password-logic REQ index)
-- [ ] Implement batch logic in core-generator
-- [ ] Implement cli-interface `--batch` flag
+- [x] Create GitHub issue #1 for implementation tracking (Issue Tracking workflow)
+- [x] Set labels: req:accepted, v2; removed adr:pending
+- [x] Plan phase complete (ADR-004 accepted)
+- [ ] Task phase: Create implementation issues from REQ-004 ACs
+- [ ] Implement REQ-004 via @coder agent
+
+### ✅ Phase 0.5 — Quality Gate V2.0 (Pre-REQ-004) ✅
 - [ ] Derive tests from REQ-004 ACs
 - [ ] Pass REQ-004 tests
 - [ ] Submit PR for REQ-004
