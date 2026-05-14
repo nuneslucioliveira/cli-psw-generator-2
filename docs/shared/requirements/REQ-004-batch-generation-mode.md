@@ -1,16 +1,16 @@
 ---
 id: REQ-004
 title: Batch Generation Mode
-status: draft
+status: accepted
 domain: password-logic
 milestone: v2
 priority: must
-author:
-  - "Agent: Architect"
 related-adrs:
   - ADR-001
   - ADR-003
   - ADR-004
+author:
+  - "Agent: Architect"
 requires:
   - REQ-001
   - REQ-002
