@@ -12,6 +12,7 @@ Architecture decisions scoped to the core-generator module.
 | ------ | --- | ------ |
 | ADR-001 | Core-Generator API Contract | accepted |
 | ADR-003 | Extended Character Set Contract | accepted |
+| ADR-004 | Batch Generation Contract | accepted |
 
 ## Superseded / Deprecated
 

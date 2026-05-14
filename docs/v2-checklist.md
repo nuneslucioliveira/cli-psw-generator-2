@@ -44,15 +44,20 @@
 **Status:** V2.0 Foundation Complete — REQ-003 implemented, ADR-003 accepted
 
 ### ✅ REQ-004: Batch Generation Mode (Spec Complete)
-- [x] Author REQ-004 (11 functional + 12 ACs)
+- [x] Author REQ-004 (Functional + Non-Functional requirements)
+- [x] Derive 12 acceptance criteria (AC-001 through AC-012)
 - [x] Zero TBD/TO-DO markers
 - [x] Related ADRs documented (ADR-001, ADR-003, pending ADR-004)
-- [ ] ADR-004 contract decision (architectural pattern)
-- [ ] Quality gate V2.0-Complete
 
-### 🔹 REQ-004: Batch Generation Mode
-- [ ] Author REQ-004 (Batch API contract, `--batch` flag)
-- [ ] Author ADR-004 (Batch Contract decision)
+### ✅ ADR-004: Batch Contract (In Review)
+- [x] ADR-004 content authored (dedicated generate_batch function)
+- [x] Two options evaluated (A: dedicated function / B: iterative delegation)
+- [x] Decision outcome: Option A chosen (preserves service boundary)
+- [x] Positive consequences: 5 documented
+- [x] Negative consequences: 4 documented with mitigations
+- [x] Neutral consequences: 3 documented
+- [x] MADR format verified (YAML frontmatter, H2/H3 headings, components)
+- [x] Zero TBD/TO-DO markers
 - [ ] Submit ADR-004 for review
 - [ ] Accept ADR-004 (`status: accepted`)
 - [ ] Implement batch logic in core-generator
