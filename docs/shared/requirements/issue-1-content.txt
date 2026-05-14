@@ -1,0 +1,48 @@
+## Summary
+
+Implement the batch generation mode as defined in REQ-004, following ADR-004's architectural decision for Option A (dedicated `generate_batch` function).
+
+## Implementation Path
+
+This issue covers the implementation of batch generation capabilities per **REQ-004** with **ADR-004 Option A** selected. The implementation includes:
+
+1. **core-generator**: New `generate_batch()` function in `password_generator.py`
+2. **cli-interface**: `--batch` flag integration and conditional delegation
+3. **Exceptions**: New `InvalidBatchCountError` exception type
+
+## Key Deliverables
+
+- `generate_batch(charset: str, length: int, count: int) -> list[str]` in core-generator
+- New exception `InvalidBatchCountError` for batch count validation failures
+- CLI `--batch` flag with argparse integration
+- Error mapping for `InvalidBatchCountError` in error messaging table
+
+## Acceptance Criteria
+
+This implementation MUST satisfy all 12 acceptance criteria from REQ-004:
+- AC-001: Batch produces N passwords (1 ≤ N ≤ 128)
+- AC-002: Each password uses correct charset
+- AC-003: All 6 charsets work with batch mode
+- AC-004: Validates batch count bounds
+- AC-005: Cryptographic security maintained
+- AC-006: Linear O(N) time complexity
+- AC-007: Backward compatibility with single-password mode
+- AC-008: Batch count defaults to single password
+- AC-009: Each batch password independently random
+- AC-010: Batch output format is one password per line
+- AC-011: Help text documents the batch flag
+- AC-012: Invalid batch count surfaces as user-friendly error
+
+## Quality Requirements
+
+- [ ] All tests passing (existing 24 MVP tests + 12 new REQ-003 tests + new REQ-004 tests)
+- [ ] Service boundary preserved (core-generator pure function, no CLI dependencies)
+- [ ] No third-party dependencies (stdlib-only)
+- [ ] All REQ-004 acceptance criteria satisfied
+- [ ] Lint and type checking pass
+
+## Related Work
+
+- ADR-004: Batch Generation Contract (Decision: Option A)
+- REQ-004: Batch Generation Mode
+- V2 Execution Plan
